@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, TrendingUp } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,8 +7,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
           {/* Logo & Tagline */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold mb-2">
-              WorX With <span className="text-primary">Neha</span>
+            <h3 className="text-2xl font-bold mb-2 flex items-center justify-center md:justify-start gap-2">
+              <span className="p-2 rounded-lg bg-primary/10">
+                <TrendingUp className="w-5 h-5 text-primary" />
+              </span>
+              <span>
+                WorX With <span className="text-primary">Neha</span>
+              </span>
             </h3>
             <p className="text-background/70 max-w-md">
               Performance marketing specialist helping businesses in Dubai and the UAE 

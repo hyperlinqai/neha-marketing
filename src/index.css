@@ -16,10 +16,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
 
-    /* Primary - Vibrant Purple */
-    --primary: 265 85% 56%;
+    /* Primary - Growth Green */
+    --primary: 142 70% 45%; /* emerald */
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 265 85% 48%;
+    --primary-hover: 142 70% 38%;
 
     /* Secondary - Soft Gray */
     --secondary: 210 20% 96%;
@@ -29,28 +29,28 @@
     --muted: 210 20% 96%;
     --muted-foreground: 215 15% 55%;
 
-    /* Accent - Electric Teal */
-    --accent: 175 84% 40%;
+    /* Accent - Lime Green */
+    --accent: 95 85% 45%;
     --accent-foreground: 0 0% 100%;
-    --accent-hover: 175 84% 34%;
+    --accent-hover: 95 85% 38%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 215 20% 90%;
     --input: 215 20% 90%;
-    --ring: 265 85% 56%;
+    --ring: 142 70% 45%;
 
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(265 85% 56%), hsl(175 84% 40%));
-    --gradient-hero: linear-gradient(135deg, hsl(265 85% 56% / 0.08), hsl(175 84% 40% / 0.08));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(265 85% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(142 70% 45%), hsl(95 85% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(142 70% 45% / 0.08), hsl(95 85% 45% / 0.08));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(142 70% 98%));
     
     --shadow-card: 0 4px 20px -2px hsl(215 25% 15% / 0.08);
     --shadow-hover: 0 8px 40px -4px hsl(215 25% 15% / 0.15);
-    --shadow-glow: 0 0 32px hsl(265 85% 56% / 0.35);
+    --shadow-glow: 0 0 32px hsl(142 70% 45% / 0.35);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -94,8 +94,8 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    /* Dark - Vibrant accents for contrast */
-    --primary: 265 85% 65%;
+    /* Dark - Vibrant accents for contrast (green) */
+    --primary: 142 70% 55%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -104,7 +104,7 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 175 84% 35%;
+    --accent: 95 85% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -112,7 +112,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 265 85% 60%;
+    --ring: 142 70% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

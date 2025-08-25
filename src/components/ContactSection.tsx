@@ -26,7 +26,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-24 gradient-hero">
+    <section id="contact" className="py-24 gradient-hero">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
