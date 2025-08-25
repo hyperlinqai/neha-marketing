@@ -10,7 +10,8 @@ const CaseStudiesSection = () => {
       id: 1,
       image: caseStudy1,
       client: "Abhay HealthTech",
-      industry: "Healthcare E-commerce",
+      industry: "HealthTech / Consumer Healthcare",
+      title: "How I Helped a Healthcare Brand Streamline Sales & Boost Product Awareness",
       challenge:
         "Split customer journey with redirects to third-party e-commerce, killing trust and brand authority",
       solution:
@@ -86,7 +87,17 @@ const CaseStudiesSection = () => {
                   {/* Client & Challenge */}
                   <div>
                     <h3 className="text-xl font-bold text-foreground mb-2">{study.client}</h3>
+                    {/** Optional Title */}
+                    {(study as any).title && (
+                      <p className="text-base text-foreground mb-2 font-semibold">
+                        {(study as any).title}
+                      </p>
+                    )}
                     <div className="space-y-2">
+                      <div>
+                        <span className="text-sm font-medium text-foreground">Industry:</span>
+                        <p className="text-sm text-muted-foreground">{study.industry}</p>
+                      </div>
                       <div>
                         <span className="text-sm font-medium text-accent">Challenge:</span>
                         <p className="text-sm text-muted-foreground">{study.challenge}</p>
@@ -115,6 +126,8 @@ const CaseStudiesSection = () => {
                       </div>
                     ))}
                   </div>
+
+                  
 
                   {/* Description & CTA */}
                   <div className="space-y-4">
