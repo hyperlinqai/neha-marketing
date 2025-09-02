@@ -6,47 +6,47 @@
 
 @layer base {
   :root {
-    /* Light theme - Premium performance marketing palette */
-    --background: 0 0% 99%;
-    --foreground: 215 25% 15%;
+    /* WorX With Neha Brand Palette */
+    --background: 210 20% 98%; /* Light Grey #F5F7FA */
+    --foreground: 0 0% 20%; /* Charcoal #333333 */
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 0 0% 20%; /* Charcoal #333333 */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 0 0% 20%; /* Charcoal #333333 */
 
-    /* Primary - Growth Green */
-    --primary: 142 70% 45%; /* emerald */
+    /* Primary - Teal */
+    --primary: 180 100% 25%; /* Teal #008080 */
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 142 70% 38%;
+    --primary-hover: 180 100% 20%;
 
-    /* Secondary - Soft Gray */
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 215 25% 25%;
+    /* Secondary - Navy */
+    --secondary: 220 45% 20%; /* Navy #1B2A49 */
+    --secondary-foreground: 0 0% 100%;
 
     /* Muted - Light Gray */
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 15% 55%;
+    --muted: 210 20% 96%; /* Light Grey variations */
+    --muted-foreground: 0 0% 45%;
 
-    /* Accent - Lime Green */
-    --accent: 95 85% 45%;
+    /* Accent - Coral */
+    --accent: 14 100% 63%; /* Coral #FF7043 */
     --accent-foreground: 0 0% 100%;
-    --accent-hover: 95 85% 38%;
+    --accent-hover: 14 100% 55%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 90%;
-    --input: 215 20% 90%;
-    --ring: 142 70% 45%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 180 100% 25%; /* Teal */
 
     --radius: 0.75rem;
 
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(142 70% 45%), hsl(95 85% 45%));
-    --gradient-hero: linear-gradient(135deg, hsl(142 70% 45% / 0.08), hsl(95 85% 45% / 0.08));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(142 70% 98%));
+    /* Custom design tokens - Updated for new brand */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 25%), hsl(14 100% 63%));
+    --gradient-hero: linear-gradient(135deg, hsl(180 100% 25% / 0.08), hsl(14 100% 63% / 0.08));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
     
     --shadow-card: 0 4px 20px -2px hsl(215 25% 15% / 0.08);
     --shadow-hover: 0 8px 40px -4px hsl(215 25% 15% / 0.15);
@@ -85,34 +85,34 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 45% 8%; /* Dark Navy variation */
+    --foreground: 210 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 45% 10%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 45% 10%;
+    --popover-foreground: 210 20% 95%;
 
-    /* Dark - Vibrant accents for contrast (green) */
-    --primary: 142 70% 55%;
+    /* Dark - Teal primary */
+    --primary: 180 100% 35%; /* Brighter Teal for dark mode */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 45% 15%; /* Dark Navy */
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 45% 15%;
+    --muted-foreground: 210 20% 65%;
 
-    --accent: 95 85% 40%;
+    --accent: 14 100% 65%; /* Brighter Coral for dark mode */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 142 70% 50%;
+    --border: 220 45% 20%;
+    --input: 220 45% 20%;
+    --ring: 180 100% 35%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -131,6 +131,26 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    html {
+      font-size: 16px; /* Prevent zoom on iOS */
+    }
+
+    input, textarea, select {
+      font-size: 16px !important; /* Prevent zoom on iOS form inputs */
+    }
+
+    /* Improve touch targets */
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
   }
 
   /* Custom utility classes */
@@ -193,9 +213,9 @@
 }
 
 @layer components {
-  /* Hero button variant */
+  /* Hero button variant - Updated for Coral CTA */
   .btn-hero {
-    @apply bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-glow hover:scale-105;
+    @apply bg-accent hover:bg-accent-hover text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-glow hover:scale-105;
   }
 
   /* Card hover effects */
@@ -203,12 +223,17 @@
     @apply transition-all duration-300 hover:shadow-hover hover:-translate-y-1;
   }
 
-  /* Gradient text */
+  /* Gradient text - Updated for Teal/Coral gradient */
   .text-gradient {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  /* Navigation styles for navy header */
+  .nav-link {
+    @apply text-white hover:text-primary transition-colors font-medium;
   }
 }
 

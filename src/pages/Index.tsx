@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import LeadMagnetSection from "@/components/LeadMagnetSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
-import ProcessSection from "@/components/ProcessSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+import FounderSnapshotSection from "@/components/FounderSnapshotSection";
+import FinalCTASection from "@/components/FinalCTASection";
 import TrustedBySection from "@/components/TrustedBySection";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -15,10 +15,10 @@ const Index = () => {
       <HeroSection />
       <TrustedBySection />
       <AboutSection />
+      <LeadMagnetSection />
       <CaseStudiesSection />
-      <ProcessSection />
-      <TestimonialsSection />
-      <ContactSection />
+      <FounderSnapshotSection />
+      <FinalCTASection />
       <Footer />
     </main>
   );
